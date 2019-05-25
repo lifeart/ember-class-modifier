@@ -30,7 +30,7 @@ Usage
 ```hbs
 <div {{class 'my-name' 'gold-color'}}></div>
 {{!-- Rendered AS: --}}
-<div class="my-name 'gold-color"></div>
+<div class="my-name gold-color"></div>
 ```
 
 ```hbs
