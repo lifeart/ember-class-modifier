@@ -1,6 +1,6 @@
 {
   "name": "ember-class-modifier",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Ember: Declarative class management modifier",
   "keywords": [
     "ember-addon"
