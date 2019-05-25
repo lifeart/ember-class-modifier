@@ -1,7 +1,7 @@
 ember-class-modifier
 ==============================================================================
 
-[Short description of the addon.]
+This `class` modifier made for declarative class management for DOM elements.
 
 
 Compatibility
@@ -18,11 +18,41 @@ Installation
 ember install ember-class-modifier
 ```
 
-
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+```hbs
+<div {{class 'my-name'}}></div>
+{{!-- Rendered AS: --}}
+<div class="my-name"></div>
+```
+
+```hbs
+<div {{class 'my-name' 'gold-color'}}></div>
+{{!-- Rendered AS: --}}
+<div class="my-name 'gold-color"></div>
+```
+
+```hbs
+<div {{class my-name=false}}></div>
+{{!-- Rendered AS: --}}
+<div></div>
+```
+```hbs
+<div {{class my-name=true}}></div>
+{{!-- Rendered AS: --}}
+<div class="my-name"></div>
+```
+```hbs
+<div {{class 'red-dot' my-name=true}}></div>
+{{!-- Rendered AS: --}}
+<div class="red-dot my-name"></div>
+```
+```hbs
+<div {{class (array 'class-one' 'class-two')}}></div>
+{{!-- Rendered AS: --}}
+<div class="class-one class-two"></div>
+```
 
 
 Contributing

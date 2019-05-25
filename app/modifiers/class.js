@@ -1,0 +1,1 @@
+export { default } from 'ember-class-modifier/modifiers/class';
