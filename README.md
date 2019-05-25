@@ -3,6 +3,23 @@ ember-class-modifier
 
 This `class` modifier made for declarative class management for DOM elements.
 
+Why?
+
+```hbs
+    <div 
+        class="
+            ui flat item 
+            {{if this.loading ' loading'}} 
+            {{if this.hasErrors ' error'}}">
+    </div>
+```
+To
+```hbs
+    <div {{class 'ui flat item'
+        loading=this.loading
+        error=this.error
+    }}></div>
+```
 
 Compatibility
 ------------------------------------------------------------------------------
@@ -20,6 +37,8 @@ ember install ember-class-modifier
 
 Usage
 ------------------------------------------------------------------------------
+
+* Modifier rewrite all classes in element.
 
 ```hbs
 <div {{class 'my-name'}}></div>
