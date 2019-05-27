@@ -17,7 +17,7 @@ To
 ```hbs
     <div {{class 'ui flat item'
         loading=this.loading
-        error=this.error
+        error=this.hasErrors
     }}></div>
 ```
 
