@@ -27,6 +27,20 @@ Compatibility
 * Ember.js v2.18 or above
 * Ember CLI v2.13 or above
 
+FastBoot support
+------------------------------------------------------------------------------
+
+Currently, modifiers don't work in FastBoot. To prevent "Blinking" you can add critical classes as standard `class` attribute. After modifier initialization it `node.classList` will be replaced.
+
+```hbs
+   <div 
+        class="ui flat item"
+        {{class 'ui flat item'
+            loading=this.loading
+            error=this.hasErrors
+        }}>
+    </div>
+```
 
 Installation
 ------------------------------------------------------------------------------
