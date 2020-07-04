@@ -1,6 +1,6 @@
-import makeFunctionalModifier from 'ember-functional-modifiers';
+import { modifier } from 'ember-modifier';
 
-export default makeFunctionalModifier((element, classes, hash) => {
+export default modifier((element, classes, hash) => {
     const newClasses = [];
     const validTypes = ['string', 'number'];
     classes.forEach((className)=>{
